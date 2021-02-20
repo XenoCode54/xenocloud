@@ -122,3 +122,44 @@ a {
     font-size: 1.2rem;
   }
 }
+
+/*Lists*/
+
+.list {
+  list-style: none;
+  color: var(--color-heading);
+  padding-left: 0;
+}
+
+.list--inline .list__item {
+  display: inline-block;
+  margin-right: 2rem;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.list--tick {
+  list-style-image: url(../img/tick.svg);
+  padding-left: 3rem;
+  font-size: 2.4rem;
+}
+
+.list--tick .list__item {
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+
+  .list--inline .list__item {
+    font-size: 1.5rem;
+  }
+
+  .list--tick {
+    font-size: 1.8rem;
+  }
+
+  .list--tick .list__item {
+    padding-left: 0;
+  }
+}
