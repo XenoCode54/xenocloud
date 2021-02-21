@@ -6,6 +6,10 @@
   --color-body: #b2afbf;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 /*Typography*/
 
 html {
@@ -195,5 +199,77 @@ a {
   .icon-circle-avatar {
     width: 65px;
     height: 65px;
+  }
+}
+
+/*Buttons*/
+
+.btn {
+  border: none;
+  border-radius: 5rem;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.btn--block {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1.8rem;
+  width: 100%;
+  margin: 72px 0 32px;
+  padding: 2rem 0;
+}
+
+.btn--inline {
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: inline-block;
+  padding: 1rem 0;
+  width: 175px;
+}
+
+.btn--outline {
+  border: 3px solid var(--color-heading);
+  background-color: transparent;
+  color: var(--color-heading);
+  transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+
+}
+
+.btn--outline:hover {
+  background-color: var(--color-heading);
+  color: white;
+}
+
+.btn--accent {
+  background-color: var(--color-accent);
+  color: white;
+  transition: background-color 0.25s ease-in-out;
+}
+
+.btn--accent:hover {
+  background-color: #fd4516;
+}
+
+.btn--secondary {
+  background-color: var(--color-secondary);
+  color: white;
+  transition: background-color 0.25s ease-in-out;
+}
+
+.btn--secondary:hover {
+  background-color: #00c8eb;
+}
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    border-radius: 3.2rem;
+  }
+
+  .btn--block {
+    font-size: 1.4rem;
   }
 }
