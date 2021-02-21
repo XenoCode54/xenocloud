@@ -228,7 +228,7 @@ a {
   font-size: 1.5rem;
   display: inline-block;
   padding: 1rem 0;
-  width: 175px;
+  width: 17.5rem;
 }
 
 .btn--outline {
@@ -272,4 +272,41 @@ a {
   .btn--block {
     font-size: 1.4rem;
   }
+}
+
+/*Inputs*/
+
+.input {
+  border: 2px solid #f5f7f8;
+  padding: 2.6rem 5rem;
+  border-radius: 4rem;
+  outline: 0;
+  color: var(--color-heading);
+  font-size: 2rem;
+}
+
+::placeholder {
+  color: #cdcbd7;
+}
+
+@media screen and (min-width: 1024px) {
+  .input {
+    font-size: 1.5rem;
+  }
+}
+
+.input-group {
+  border: 2px solid #ccc;
+  display: flex;
+  border-radius: 4rem;
+}
+
+.input-group .input {
+  flex-grow: 1;
+  border: none;
+  padding: 2.6rem 2rem;
+}
+
+.input-group .btn {
+  margin: 5px;
 }
